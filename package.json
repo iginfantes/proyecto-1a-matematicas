@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-1a-matematicas",
+  "version": "1.0.0",
+  "description": "Proyecto de matemáticas sencillo para hacer paquete npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iginfantes/proyecto-1a-matematicas.git"
+  },
+  "keywords": [
+    "matematicas",
+    "npm",
+    "suma",
+    "resta",
+    "división"
+  ],
+  "author": "Isaac García <isaac_xvi@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iginfantes/proyecto-1a-matematicas/issues"
+  },
+  "homepage": "https://github.com/iginfantes/proyecto-1a-matematicas#readme"
+}
