@@ -7,10 +7,9 @@ module.exports={
      * @param {*} num2 Numero 2 de la suma 
      * @returns 
      */
-    suma: (num1,num2)=>{
-        return num1+num2;
+    suma: function(num1,num2){
+        return this.esNumero(num1,num2)? num1+num2: this.mensajeError();
     },
-
      /**
      * Multiplicación de dos números
      * @example
@@ -19,8 +18,8 @@ module.exports={
      * @param {*} num2 Numero 2 de la multiplicación 
      * @returns 
      */
-    multiplicar: (num1,num2)=>{
-        return num1*num2;
+    multiplicar: function(num1,num2){
+        return this.esNumero(num1,num2)? num1*num2 : this.mensajeError();
     },
     /**
      * Division de dos números
@@ -30,7 +29,22 @@ module.exports={
      * @param {*} num2 Numero 2 de la división 
      * @returns 
      */
-    dividir: (num1,num2)=>{
-        return num1/num2;
+    dividir: function(num1,num2){
+        return this.esNumero(num1,num2)? num1/num2 : this.mensajeError();
+    },
+    mensajeError:function(){
+        console.error('Uno de los valores no es numérico')
+    },
+    /**
+     * Comprueba si los números pasados son de tipo number
+     * @param {*} n1 numero 1
+     * @param {*} n2 numero 2
+     * @returns 
+     */
+    esNumero: function(n1,n2){
+      if(typeof n1!=='number' || typeof n2!=='number') {
+        return false;
+      }
+      return true;
     }
 }
